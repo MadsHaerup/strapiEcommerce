@@ -16,14 +16,15 @@ useEffect(() => {
 
   return (
     <Carousel cols={2} rows={1} gap={10} loop>
-      <Carousel.Item>
-    <img width="100%" src="http:/localhost:1337/uploads/medium_toa_heftiba_LS_Yrpn4vy_4_unsplash_0a56f2cc2c.jpg" alt="people"/>
-    </Carousel.Item>
-    {/* {items.map((item) =>(
+    <>
+    {items.map((item)=>(
+       <Carousel.Item>
       <Slide key={item.id} 
-      image={item.name.formats.medium.url}
+      image={item.image.formats.medium.url}
       />
-    ))} */}
+      </Carousel.Item>
+      ))}
+    </>
       
     </Carousel>
   )
