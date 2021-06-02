@@ -1,26 +1,29 @@
+import { Link } from '@reach/router';
 import React from 'react';
 import styled from 'styled-components';
 
 export default function Logo() {
   return (
     <Container>
-      <Title>Wear 
+      <Link to="/" style={title}>Wear 
         <span>&amp;</span>
         <Text>Tear</Text>
-      </Title>
+      </Link>
     </Container>
   )
 }
 
 const Container = styled.div`
  padding: 1rem;
+ display: flex;
+ justify-content: center;
 `;
 
-const Title = styled.h1`
-  font-size: 2em;
-  text-align: center;
-  color: #f72585;
-`;
+const title ={
+  fontSize: "2em",
+  color: "#f72585",
+  textDecoration: "none"
+}
 
 const Text = styled.span`
   color: #7209b7;

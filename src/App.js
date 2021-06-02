@@ -1,12 +1,20 @@
 import './App.css';
 import Home from './pages/Home';
 import {Router} from '@reach/router';
+import Clothes from './pages/Clothes';
+import Navbar from './components/Navbar';
+import PageFooter from './components/PageFooter';
 
 function App() {
   return (
-    <Router>
-      <Home path="/"/>
-    </Router>
+    <>
+    <Navbar/>
+      <Router>
+        <Home path="/"/>
+        <Clothes path="clothes"/>
+      </Router>
+    <PageFooter/>
+    </>
   );
 }
 

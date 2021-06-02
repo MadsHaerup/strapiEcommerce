@@ -16,6 +16,10 @@ const Footer = styled.footer`
   display:flex;
   background:#3f37c9;
   margin-top: 3rem;
+
+  @media screen and (max-width:385px){
+    flex-direction: column;
+  }
 `;
 
 const Section = ({category, text1, text2, text3}) =>{
