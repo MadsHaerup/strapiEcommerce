@@ -16,16 +16,18 @@ useEffect(() => {
 
   return (
     <Carousel cols={2} rows={1} gap={10} loop>
-    <>
-    {items.map((item)=>(
-       <Carousel.Item>
+    
+    {items.map((item)=>{ 
+      return(
+
+      <Carousel.Item>
       <Slide key={item.id} 
       image={item.image.formats.medium.url}
       />
       </Carousel.Item>
-      ))}
-    </>
-      
+
+    )
+    })}
     </Carousel>
   )
 }
