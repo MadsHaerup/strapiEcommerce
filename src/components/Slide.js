@@ -7,6 +7,5 @@ export default function Slide({image}) {
 }
 
 const imgstyle = {
-  // boxShadow: "8px 4px 18px 17px #b5e49a ",
   borderRadius: "10px"
 }
