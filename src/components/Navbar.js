@@ -49,5 +49,5 @@ const Nav = styled.nav`
 const linkStyle = {
   color: "#fff",
   textDecoration: "none",
-  fontSize: "1rem"
+  fontSize: "1.5rem" 
 }

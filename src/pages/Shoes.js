@@ -18,9 +18,9 @@ export default function Shoes() {
 
   return (
     <Wrapper>
-
       {items.map((item)=>(
         <Product key={item.id}
+        id={item.id}
         title={item.title} 
         price={item.price}
         qty={item.qty}
@@ -34,8 +34,10 @@ export default function Shoes() {
 
 const Wrapper = styled.div`
   margin:0 auto;
-  max-width: 1000px;
+  max-width: 1400px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   justify-items: center;
+  grid-gap:1rem;
+  
 `;
