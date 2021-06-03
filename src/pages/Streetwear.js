@@ -3,11 +3,11 @@ import React, { useEffect, useState } from 'react';
 import Product from '../components/Product';
 import styled from 'styled-components';
 
-export default function Clothes() {
+export default function Streetwear() {
 	const [items, setItems] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:1337/categories?name=Clothes")
+    axios.get("http://localhost:1337/categories?name=streetwear")
     .then((response) => {
       console.log(response.data[0].products);
       setItems(response.data[0].products);

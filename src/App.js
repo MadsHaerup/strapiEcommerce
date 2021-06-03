@@ -1,9 +1,10 @@
 import './App.css';
 import Home from './pages/Home';
 import {Router} from '@reach/router';
-import Clothes from './pages/Clothes';
 import Navbar from './components/Navbar';
 import PageFooter from './components/PageFooter';
+import Streetwear from './pages/Streetwear';
+import Shoes from './pages/Shoes';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
     <Navbar/>
       <Router>
         <Home path="/"/>
-        <Clothes path="clothes"/>
+        <Streetwear path="streetwear"/>
+        <Shoes path="shoes"/>
       </Router>
     <PageFooter/>
     </>

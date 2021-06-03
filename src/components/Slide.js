@@ -1,8 +1,12 @@
 import React from 'react';
-import Carousel from 'react-grid-carousel';
 
 export default function Slide({image}) {
   return (
-    <img max-width="100%" height="auto" src={"http://localhost:1337"+image} alt="people"/>
+    <img   style={imgstyle} height="100%" width="100%" src={"http://localhost:1337"+image} alt="people"/>
   )
+}
+
+const imgstyle = {
+  // boxShadow: "8px 4px 18px 17px #b5e49a ",
+  borderRadius: "10px"
 }

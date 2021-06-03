@@ -75,11 +75,11 @@ export default function Sidebar() {
 
     <div className="sidebar">
       <ul className="sidebar__list">
-        <Link className="sidebar__list__item" to="clothes" onClick={()=>toleft()}>Clothes</Link>
+        <Link className="sidebar__list__item" to="streetwear" onClick={()=>toleft()}>Streetwear</Link>
         <Link className="sidebar__list__item" to="shoes" onClick={()=>toleft()}>Shoes</Link>
         <Link className="sidebar__list__item" to="accessories" onClick={()=>toleft()}>Accessories</Link>
         <Link className="sidebar__list__item" to="sport" onClick={()=>toleft()}>Sport</Link>
-        <Link className="sidebar__list__item" to="beauty" onClick={()=>toleft()}>Beauty</Link>
+        <Link className="sidebar__list__item" to="beauty" onClick={()=>toleft()}>Care</Link>
       </ul>
     </div>
     </>

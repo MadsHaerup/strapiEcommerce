@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Carousel from 'react-grid-carousel'
 import Slide from './Slide';
+import './Slider.scss';
 
 const Slider = () => {
 const [items, setItems] = useState([]);
@@ -15,7 +16,8 @@ useEffect(() => {
 }, [setItems])
 
   return (
-    <Carousel cols={2} rows={1} gap={10} loop>
+    <Carousel 
+    cols={2} rows={1} gap={10} loop>
     
     {items.map((item)=>{ 
       return(

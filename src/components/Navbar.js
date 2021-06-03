@@ -12,11 +12,11 @@ export default function Navbar() {
       <Logo/>
       <Sidebar/>
       <List >
-        <Link style={linkStyle} to="clothes">Clothes</Link>
-        <Link style={linkStyle} to="#">Shoes</Link>
-        <Link style={linkStyle} to="#">Accessories</Link>
-        <Link style={linkStyle} to="#">Sport</Link>
-        <Link style={linkStyle} to="#">Beauty</Link>
+        <Link style={linkStyle} to="streetwear">Streetwear</Link>
+        <Link style={linkStyle} to="shoes">Shoes</Link>
+        <Link style={linkStyle} to="accessories">Accessories</Link>
+        <Link style={linkStyle} to="sport">Sport</Link>
+        <Link style={linkStyle} to="care">Care</Link>
       </List>
     </Nav>
   )
