@@ -15,8 +15,8 @@ function App() {
         <Home path="/"/>
         <Streetwear path="streetwear"/>
         <View path="streetwear/:id"/>
-        
         <Shoes path="shoes"/>
+        <View path="shoes/:id"/>
       </Router>
     <PageFooter/>
     </>

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import Product from '../components/Product';
 import styled from 'styled-components';
+import SingleView from './SingleView';
 
 export default function View({id}) {
 	const [items, setItems] = useState([]);
@@ -10,7 +10,9 @@ export default function View({id}) {
     axios.get(`http://localhost:1337/products/${id}`)
     .then((response) => {
       console.log(response.data);
+      console.log(response.data.image.formats.medium.url);
       setItems(response.data);
+
     });
     
   }, [setItems,id])
@@ -18,16 +20,14 @@ export default function View({id}) {
 
   return (
     <Wrapper>
-      {/* {items.map((item)=>( */}
-        <Product key={items.id}
+        <SingleView key={items.id}
         id={items.id}
         title={items.title} 
         price={items.price}
         qty={items.qty}
         description={items.description}
-        image={items.image.formats.small.url}
+        image={"http://localhost:1337"+items.image.formats.medium.url}
         />
-      {/* ))} */}
     </Wrapper>
   )
 }

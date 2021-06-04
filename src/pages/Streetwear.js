@@ -35,7 +35,7 @@ export default function Streetwear() {
 const Wrapper = styled.div`
   margin:0 auto;
   margin-top:2rem;
-  max-width: 1400px;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   justify-items: center;

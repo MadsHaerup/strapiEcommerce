@@ -2,7 +2,7 @@ import { Link } from '@reach/router';
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Product({title, image, description, price, qty, id}) {
+export default function Product({title, image,price, id}) {
   return (
     <ProductCon >
       <Title>{title}</Title>
@@ -47,5 +47,8 @@ color: "#f72585",
 fontWeight: "bold",
 padding:"1rem",
 background:"#fff",
-border:"1px solid #f72585"
+border:"1px solid #f72585",
 }
+
+
+
